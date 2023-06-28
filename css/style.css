@@ -41,8 +41,15 @@ body {
 .dropdown-menu {
   color: #000000;
 }
-
-
+.dropdown-item a:hover{
+  background-color: #d4d4d4;
+}
+.dropdown-item ul li.a{
+  background-color: #de002f;
+}
+.dropdown-menu a:active{
+  background-color: #d4d4d4;
+}
 /*============= CAROUSEL =============*/
 
 #carousel {
