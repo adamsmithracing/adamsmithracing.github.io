@@ -1,0 +1,534 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif!important;
+  color: #000000;
+}
+
+/*============= TOP BAR HEADER =============*/
+.top-bar {
+  background: #d4d4d4;
+  height: 2.8rem;
+  padding: .5rem 0;
+}
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar-brand img {
+  height: 5rem;
+}
+.navbar {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+  z-index: 1;
+}
+.nav-item {
+  padding: .5rem;
+}
+.nav-link.active,
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #de002f!important;
+}
+
+.dropdown-menu {
+  color: #000000;
+}
+
+
+/*============= CAROUSEL =============*/
+
+#carousel {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+  z-index: 0;
+}
+.carousel-inner {
+  max-height: 38rem!important;
+}
+
+.carousel-inner{
+  transition: 0s !important;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.carousel-indicators .active {
+  background-color: #de002f;
+}
+
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item-active {
+  transition: transform 1.2s ease-in-out;
+}
+
+/*-- Carousel Content --*/
+.carousel-caption {
+  position: absolute;
+  top: 54%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  z-index: 0;
+}
+.bg-custom {
+  position: sticky;
+  background-color: rgba(0, 0, 0, .4);
+  color: white;
+  border-radius: 1rem;
+}
+.carousel-caption h1 {
+  font-size: 3.8rem;
+  text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+}
+.border-primary {
+  border-top: .2rem solid #de002f!important;
+}
+.carousel-caption h3 {
+  font-size: 2.2rem;
+  text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+}
+.btn-lg {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-width: medium;
+}
+.btn-danger {
+  background-color: #de002f;
+  border: .05rem solid #de002f;
+}
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #d4d4d4!important;
+  border: .05rem solid #d4d4d4!important;
+}
+.btn-primary {
+  background-color: #707070;
+  border: .05rem solid #707070;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #d4d4d4!important;
+  border: .05rem solid #d4d4d4!important;
+}
+
+/*===== FIXED BACKGROUND IMG =====*/
+.fixed {
+  background-image: url('../img/eZy\ Watermark_07-06-2023_22-47-46-8380.JPG');
+  position: fixed;
+}
+.fixed-background {
+  padding: 10rem 0;
+  overflow: hidden; /*-- Correction for iOS --*/
+}
+
+
+/*-- Emoji Navbar --*/
+.emoji {
+  background-image: linear-gradient(to right, #000000, #de002f);
+  min-height: 0!important;
+  padding: .4rem 0!important;
+}
+.emoji .svg-inline--fa {
+  margin: 0 auto;
+  color: white;
+  font-size: 2rem;
+}
+
+/*============= FOOTER =============*/
+
+footer {
+  background-color: #707070;
+  padding: 1rem 2rem 3rem;
+}
+footer img {
+  height: 3.5rem;
+  margin: 1.5rem auto;  
+}
+footer p, footer a,
+.socket a {
+  color: white;
+  text-decoration: none;
+}
+ul.social {
+  list-style-type: none;
+  display: flex;
+  max-width: 8rem;
+  margin: 0 auto;
+  padding: 0;
+}
+ul.social li {
+  margin: 0 auto;
+}
+footer .svg-inline--fa {
+  font-size: 2.3rem;
+}
+footer .svg-inline--fa:hover {
+  color: #de002f;
+}
+
+
+/*============= SOCKET =============*/
+
+.socket {
+  background-color: black;
+  border-top: .1 rem solid #de002f;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+  .carousel-caption h1 {
+    font-size: 2.8rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1.8rem;
+  }
+}
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+  .btn-lg {
+    font-size: .95rem;
+  }
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/*============= ABOUT PAGE =============*/
+.aboutSection {
+  background: white;
+  padding: 10rem 0;
+}
+.aboutSection a {
+  color: black;
+  text-decoration: none;
+}
+.aboutSection ul.social {
+  list-style-type: none;
+  display: flex;
+  max-width: 8rem;
+  margin: 0 auto;
+  padding: 0;
+}
+.aboutSection ul.social li {
+  margin: 0 auto;
+}
+.aboutSection .svg-inline--fa {
+  font-size: 2.3rem;
+}
+.aboutSection .svg-inline--fa:hover {
+  color: #de002f;
+}
+
+/*============= SCHEDULE PAGE =============*/
+.scheduleHeader {
+  background: white;
+  padding: 4rem 0;
+}
+
+/*.scheduleCards a:hover {
+  color: #de002f;
+}*/
+
+/*============= SPONSORS =============*/
+.sponsorRepresentation a {
+  color: #de002f;
+  text-decoration: none;
+}
+
+/*============= PHOTOS =============*/
+.photoHeader {
+  background: white;
+  padding: 4rem 0;
+}
+
+.socket-space {
+  background-image: linear-gradient(to right, #000000, #de002f);
+}
+
+body {
+  /*background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);*/
+  min-height: 100vh;
+  font: normal 16px sans-serif;
+  padding: 60px 0;
+}
+
+.container.gallery-container {
+  background-color: #fff;
+  /*color: #35373a;
+  min-height: 100vh;
+  border-radius: 0px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);*/
+}
+
+.gallery-container h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+}
+
+.gallery-container p.page-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 25px auto;
+  color: #888;
+  font-size: 18px;
+}
+
+.tz-gallery {
+  padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+  border-radius: 4px;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+  body {
+      padding: 0;
+  }
+
+  .container.gallery-container {
+      border-radius: 0;
+  }
+}
+
+
+
+
+
+
+/*===========================*/
+/*.photoGallery figure {
+  margin: 15px 0;
+}
+
+.photoGallery figcaption {
+  text-align: center;
+}
+
+.grayscale {
+  filter: grayscale(0);
+}
+
+.grayscale:hover {
+  filter: grayscale(50%)
+}*/
+
+
+
+/*============= CONTACT =============*/ 
+.contactHeader {
+  background: white;
+  padding: 4rem 0;
+}
+.contactSection {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 10px;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .05);
+}
+.contactSection header {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 30px;
+  /*border-bottom: 1px solid #707070;*/
+}
+.contactSection form {
+  margin: 35px 30px;
+}
+form .dbl-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.dbl-field .field {
+  height: 40px;
+  display: flex;
+  position: relative;
+  width: calc(100% / 2 - 13px);
+}
+form .field input,
+form .message textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #707070;
+}
+form .field input::placeholder,
+form .message textarea::placeholder {
+  color: #707070;
+}
+form .field input:focus,
+form .message textarea:focus {
+  border: 2px solid #de002f;
+}
+form .message {
+  position: relative;
+}
+form .message {
+  top: 0px;
+  font-size: 20px;
+}
+
+form .message textarea {
+  min-height: 120px;
+  max-height: 230px;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 15px 20px 0 48px;
+}
+
+form .button-area {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+
+.button-area button {
+  font-size: 18px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #d4d4d4;
+  padding: 13px 25px;
+  transition: background 0.3s ease;
+}
+.button-area button:hover{
+  background: #de002f;
+}
+.button-area span {
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+
+@media(max-width:600px){
+  .contactSection header{
+    text-align: center;
+  }
+  form .dbl-field{
+    margin-bottom: 5px;
+    flex-direction: column;
+  }
+  form .message textarea{
+    resize: none;
+  }
+  .dbl-field .field{
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  form .button-area{
+    flex-direction: column;
+  }
+  .button-area button{
+    width: 100%;
+  }
+  .button-area span{
+    text-align: center;
+    margin: 20px 0;
+  }
+}
