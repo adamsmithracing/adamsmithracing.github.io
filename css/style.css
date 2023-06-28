@@ -305,6 +305,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
   background: white;
   padding: 4rem 0;
 }
+.scheduleCards a{
+  display: block;
+}
+.scheduleCards a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
 
 /*.scheduleCards a:hover {
   color: #de002f;
@@ -393,8 +400,41 @@ body {
 }
 
 
+/*=========== July Schedule Page ==============*/
+.scheduleJuly img{
+  display: block;
+  width: 900px;
+  height: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-
+/* xs */
+.scheduleJuly img {
+  width: 450px;
+  height: auto;
+}
+/* sm */
+@media (min-width: 768px) {
+  .scheduleJuly img {
+    width: 700px;
+    height: 1200px;
+  }
+}
+/* md */
+@media (min-width: 992px) {
+  .scheduleJuly img {
+    width: 850px;
+    height: 1350px;
+  }
+}
+/* lg */
+@media (min-width: 1200px) {
+  .scheduleJuly img {
+    width: 900px;
+    height: 1400px;
+  }
+}
 
 
 /*===========================*/
@@ -419,7 +459,7 @@ body {
 /*============= CONTACT =============*/ 
 .contactHeader {
   background: white;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 .contactSection {
   margin: 0;
@@ -436,11 +476,11 @@ body {
 .contactSection header {
   font-size: 22px;
   font-weight: 600;
-  padding: 20px 30px;
+  padding: 15px 30px;
   /*border-bottom: 1px solid #707070;*/
 }
 .contactSection form {
-  margin: 35px 30px;
+  margin: 5px 30px;
 }
 form .dbl-field {
   display: flex;
@@ -524,7 +564,7 @@ form .button-area {
   form .message textarea{
     resize: none;
   }
-  .dbl-field .field{
+  form .dbl-field .field{
     margin-bottom: 5px;
     width: 100%;
   }
@@ -533,9 +573,7 @@ form .button-area {
   }
   .button-area button{
     width: 100%;
-  }
-  .button-area span{
-    text-align: center;
-    margin: 20px 0;
+    padding: 11px 0;
+    font-size: 16px;
   }
 }
