@@ -154,7 +154,17 @@ body {
   color: white;
   font-size: 2rem;
 }
-
+.alert {
+  background-color: #de002f;
+  border: #de002f;
+  color: #000000;
+  font-style: italic;
+  font-weight:bold;
+  opacity: 70%;
+}
+.alert button{
+  color: #000000;
+}
 /*============= FOOTER =============*/
 
 footer {
