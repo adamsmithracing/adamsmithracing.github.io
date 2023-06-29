@@ -95,6 +95,8 @@ body {
   background-color: rgba(0, 0, 0, .4);
   color: white;
   border-radius: 1rem;
+  min-width: 300px;
+
 }
 .carousel-caption h1 {
   font-size: 3.8rem;
@@ -226,6 +228,30 @@ footer .svg-inline--fa:hover {
   }
   .btn-lg {
     font-size: .95rem;
+  }
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+  .carousel-caption h1 {
+    font-size: 2.0rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1.0rem;
+  }
+  .btn-lg {
+    font-size: .85rem;
+  }
+}
+/* Devices under 320px (sm) */
+@media (max-width: 319.98px) {
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+  .carousel-caption h3 {
+    font-size: .90rem;
+  }
+  .btn-lg {
+    font-size: .78rem;
   }
 }
 
