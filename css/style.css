@@ -86,7 +86,7 @@ body {
 .carousel-caption {
   position: absolute;
   top: 54%;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
   text-transform: uppercase;
   z-index: 0;
 }
