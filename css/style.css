@@ -357,7 +357,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
   display: flexbox;
   height: 100%;
   text-align: center;
-  width: 50%;
+  width: 100%;
   background: #de002f;
   color: white;
   margin: 0;
