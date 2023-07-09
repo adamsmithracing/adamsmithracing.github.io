@@ -380,8 +380,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
   text-decoration: none;
 }
 
-/*============= PHOTOS =============*/
-.photoHeader {
+/*============= PHOTO Galleries =============*/
+.galleryHeader {
   background: white;
   padding: 4rem 0;
 }
@@ -454,6 +454,12 @@ body {
   .container.gallery-container {
       border-radius: 0;
   }
+}
+
+/*========= PHOTOS MAIN ===========*/
+.photosHeader {
+  background: white;
+  padding: 4rem 0;
 }
 
 
